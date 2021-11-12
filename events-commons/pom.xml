@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.commons</groupId>
+	<artifactId>events-commons</artifactId>
+	<version>1.1.0</version>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>io.eventuate.tram.core</groupId>
+			<artifactId>eventuate-tram-events</artifactId>
+			<version>0.29.0.RELEASE</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<extensions>
+			<extension>
+				<groupId>com.allogy.maven.wagon</groupId>
+				<artifactId>maven-s3-wagon</artifactId>
+				<version>1.2.0</version>
+			</extension>
+		</extensions>	
+		<plugins>
+		</plugins>
+	</build>
+</project>
